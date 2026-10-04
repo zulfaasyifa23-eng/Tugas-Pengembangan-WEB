@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style> 
+        body {
+            background-image: url('/latihan5a/images/background2.jpg');
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>julijul</title>
+    <link rel="icon" type="images/x-icon" href="/latihan5a/images/biru.jpg"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Bagian header: contoh HTML Block dan HTML ID -->
+    <header id="beranda">
+        <h1> Jadoo Store</h1>
+        <p>Katalog produk untuk penggemar animasi kartun <span>jadoo</span>.</p>
+
+        <!-- Contoh HTML List -->
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#daftar-produk">Daftar Produk</a></li>
+                <li><a href="#panduan">Panduan Belanja</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#pesanan">Form Pemesanan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contoh HTML Block, Inline, Class, dan ID -->
+        <section id="tentang" class="bagian-halaman">
+            <h2>Tentang Toko</h2>
+            <div class="informasi-toko">
+                <p>
+                    Kami menyediakan berbagai <strong>produk</strong>,
+                    seperti <em>keychin</em>, baju, poster, dan lanyard.
+                </p>
+                <p>
+                    Produk bertanda <span class="status-produk">Pre-order</span>
+                    memerlukan waktu pengiriman lebih lama.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contoh HTML Table -->
+        <section id="daftar-produk" class="bagian-halaman">
+            <h2>Daftar Produk</h2>
+            <div class="table-wrapper" role="region" aria-label="Katalog produk yang dapat digulir" tabindex="0">
+                <table border="1">
+                <caption>Katalog Produk Jadoo</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Nama Produk</th>
+                        <th scope="col">Kategori</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Stok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="produk">
+                        <td>1</td>
+                        <td>Keychin</td>
+                        <td>aksesoris</td>
+                        <td>Rp20.000</td>
+                        <td class="status-tersedia">Tersedia</td>
+                    </tr>
+                    <tr class="produk">
+                        <td>2</td>
+                        <td>Pakaian Eksklusif Jado</td>
+                        <td>Pakaian</td>
+                        <td>Rp450.000</td>
+                        <td class="status-tersedia">pre-order</td>
+                    </tr>
+                    <tr class="produk">
+                        <td>3</td>
+                        <td>Poster jadoo</td>
+                        <td>Poster</td>
+                        <td>Rp50.000</td>
+                        <td class="status-preorder">tersedia</td>
+                    </tr>
+                    <tr class="produk">
+                        <td>4</td>
+                        <td>lanyard</td>
+                        <td>aksesoris</td>
+                        <td>Rp20.000</td>
+                        <td class="status-preorder">tersedia</td>
+
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contoh Ordered List dan Description List -->
+        <section id="panduan" class="bagian-halaman">
+            <h2>Panduan Belanja</h2>
+            <ol>
+                <li>Pilih produk yang kamu inginkan dari tabel katalog.</li>
+                <li>Isi formulir pemesanan.</li>
+                <li>Pilih metode pembayaran yang kamu ingin gunakan.</li>
+                <li>Kirim formulir dan tunggu konfirmasi.</li>
+            </ol>
+
+            <h3>Keterangan Status</h3>
+            <dl>
+                <dt>Tersedia</dt>
+                <dd>Produk dapat langsung dipesan.</dd>
+                <dt>Pre-order</dt>
+                <dd>Produk dipesan terlebih dahulu dan dikirim setelah tersedia.</dd>
+            </dl>
+        </section>
+
+        <!-- Media Arknights: gambar dan video -->
+        <section id="media" class="bagian-halaman">
+            <h2>Media kartun jadoo</h2>
+
+            <h3>Gambar karakter jadoo</h3>
+            <figure>
+                <img src="images/Choi jaddo.jpg" alt="jadoo" width="560" height="315">
+                     
+                <figcaption>Ilustrasi kartun jadoo.</figcaption>
+            </figure>
+
+            <h3>Video Animasi Hello Jadoo</h3>
+            <div class="video-youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TIu14GOmTIQ?si=TfEb7qnWtJ7g_9rV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+            </video>
+        </section>
+
+        <!-- Contoh HTML Form -->
+        <section id="pesanan" class="bagian-halaman">
+            <h2>Form Pemesanan</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Data Pembeli</legend>
+
+                    <p>
+                        <label for="nama">Nama lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telepon">Nomor telepon:</label><br>
+                        <input type="tel" id="telepon" name="telepon">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detail Pesanan</legend>
+
+                    <p>
+                        <label for="produk">Pilih produk:</label><br>
+                        <select id="produk" name="produk" required>
+                            <option value="">-- Pilih Produk --</option>
+                            <option value="keychin">keychin</option>
+                            <option value="pakaian Eksklusif animasi jadoo">pakaian Eksklusif animasi jadoo</option>
+                            <option value="poster-jadoo">Poster jado</option>
+                            <option value="lanyard">lanyard</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="jumlah">Jumlah:</label><br>
+                        <input type="number" id="jumlah" name="jumlah" min="1" value="1">
+                    </p>
+
+                    <p>Metode pembayaran:</p>
+                    <input type="radio" id="transfer" name="pembayaran" value="transfer" required>
+                    <label for="transfer">Transfer Bank</label><br>
+
+                    <input type="radio" id="ewallet" name="pembayaran" value="e-wallet">
+                    <label for="ewallet">E-Wallet</label><br>
+
+                    <p>
+                        <input type="checkbox" id="persetujuan" name="persetujuan" required>
+                        <label for="persetujuan">Saya menyetujui data pesanan di atas.</label>
+                    </p>
+
+                    <p>
+                        <label for="catatan">Catatan tambahan:</label><br>
+                        <textarea id="catatan" name="catatan" rows="5" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Kirim Pesanan</button>
+                <button type="reset">Bersihkan Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="kontak">
+        <p>&copy; 2026 Jadoo Store —.</p>
+        <address>
+            Email: <a href="mailto:jadoo@email.com">jadoo@email.com</a>
+        </address>
+    </footer>
+</body>
+</html>
