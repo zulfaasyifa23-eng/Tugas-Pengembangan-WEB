@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="latihann.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="box1">
+ <h1>Roselleshop</h1>
+    </div>
+    <div class="box2">
+     <p>Temukan pakaian yang bukan hanya cocok untukmu, tetapi juga mencerminkan siapa dirimu.</p>
+    </div>
+  <table class="lebar-penuh tabel-best">
+  <tr>
+    <td class="sel-best">
+      <div class="kartu">
+        <img src="images/Blouse (1).jpg" alt="blouse" class="gambar">
+        <h3>blouse</h3>
+      </div>
+    </td>
+    <td class="sel-best">
+      <div class="kartu">
+        <img src="images/celana.jpg" alt="Celana" class="gambar">
+        <h3>Celana</h3>
+      </div>
+    </td>
+    <td class="sel-best">
+      <div class="kartu">
+        <img src="images/rok2.jpg" alt="Rok" class="gambar">
+        <h3>Rok</h3>
+      </div>
+    </td>
+    <td class="sel-best">
+      <div class="kartu">
+        <img src="images/cardigan.jpg" alt="Cardigan" class="gambar">
+        <h3>Cardigan</h3>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<blockquote>
+  &ldquo;Hidup itu singkat, pakai outfit favoritmu dulu.&rdquo;
+</blockquote>
+
+<table class="tabel-menu">
+  <caption>Daftar produk &amp; harga per item</caption>
+  <thead>
+    <tr>
+      <th class="kolom-no">No</th>
+      <th>Daftar Produk</th>
+      <th class="kolom-harga">Harga</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Kaos Basic</td><td>Rp 25.000</td></tr>
+    <tr><td>2</td><td>Blouse Polos</td><td>Rp 28.000</td></tr>
+    <tr><td>3</td><td>Kemeja Oversize</td><td>Rp 30.000</td></tr>
+    <tr><td>4</td><td>Celana Kulot</td><td>Rp 32.000</td></tr>
+    <tr><td>5</td><td>Rok Plisket</td><td>Rp 35.000</td></tr>
+    <tr><td>6</td><td>Cardigan Rajut</td><td>Rp 40.000</td></tr>
+    <tr><td>7</td><td>Celana Cargo</td><td>Rp 42.000</td></tr>
+    <tr><td>8</td><td>Rok Midi Satin</td><td>Rp 45.000</td></tr>
+    <tr><td>9</td><td>Cardigan Oversize</td><td>Rp 55.000</td></tr>
+    <tr><td>10</td><td>Celana Wide Leg</td><td>Rp 60.000</td></tr>
+  </tbody>
+</table>
+
+<form class="form" action="#" method="post">
+
+  <label for="nama">Nama</label>
+  <input type="text" id="nama" name="nama" placeholder="Nama lengkap kamu">
+
+  <label for="wa">Nomor WhatsApp</label>
+  <input type="tel" id="wa" name="wa" placeholder="08xxxxxxxxxx">
+
+  <label for="menu-pilihan">Pilih Produk</label>
+  <select id="menu-pilihan" name="menu">
+    <option value="">-- Pilih produk --</option>
+    <option>Kaos Basic - Rp 25.000</option>
+    <option>Blouse Polos - Rp 28.000</option>
+    <option>Kemeja Oversize - Rp 30.000</option>
+    <option>Celana Kulot - Rp 32.000</option>
+    <option>Rok Plisket - Rp 35.000</option>
+    <option>Cardigan Rajut - Rp 40.000</option>
+    <option>Celana Cargo - Rp 42.000</option>
+    <option>Rok Midi Satin - Rp 45.000</option>
+    <option>Cardigan Oversize - Rp 55.000</option>
+    <option>Celana Wide Leg - Rp 60.000</option>
+  </select>
+
+  <label for="ukuran">Ukuran</label>
+  <select id="ukuran" name="ukuran">
+    <option value="">-- Pilih ukuran --</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+  </select>
+
+  <label for="jumlah">Jumlah</label>
+  <input type="number" id="jumlah" name="jumlah" min="1" value="1">
+
+  <label for="alamat">Alamat Pengiriman</label>
+  <textarea id="alamat" name="alamat" rows="3" placeholder="Tulis alamat lengkap"></textarea>
+
+  <label for="tanggal">Tanggal Pengambilan</label>
+  <input type="date" id="tanggal" name="tanggal">
+
+  <p class="judul-radio">Metode Pembayaran</p>
+  <input type="radio" id="cash" name="bayar" value="cash" checked>
+  <label for="cash" class="radio">Cash</label>
+  <input type="radio" id="qris" name="bayar" value="qris">
+  <label for="qris" class="radio">QRIS</label>
+  <input type="radio" id="transfer" name="bayar" value="transfer">
+  <label for="transfer" class="radio">Transfer Bank</label>
+
+  <label for="catatan">Catatan</label>
+  <textarea id="catatan" name="catatan" rows="3" placeholder="Contoh: warna hitam, tolong dikemas rapi"></textarea>
+
+  <input type="submit" value="Kirim Pesanan" class="kirim">
+</form>
+
+  <!-- Dokumentasi Toko Kami -->
+  <td class="kolom-footer">
+    <h3>Dokumentasi Toko Kami</h3>
+    <p><a href="https://www.youtube.com/" target="_blank">Tonton video di YouTube &rarr;</a></p>
+    <p>Di toko kami, lemari boleh penuh tapi selalu ada ruang buat satu outfit lagi, cardigan selalu siap menemani cuaca yang suka berubah, dan rok plisket paling jago bikin kamu merasa siap foto kapan saja.</p>
+  </td>
+
+  <!-- Tentang -->
+  <td class="kolom-footer" id="tentang">
+    <h3>Tentang</h3>
+    <p>Roselle adalah toko fashion bergaya klasik yang percaya bahwa pakaian sederhana yang nyaman dan pas di badan bisa membuat hari terasa lebih percaya diri.</p>
+    <ul class="kontak">
+      <li><b>WhatsApp:</b> 0858-8003-7746</li>
+      <li><b>Email:</b> <a href="mailto:halo@roselle.id">halo@roselle.id</a></li>
+      <li><b>Instagram:</b> <a href="#">@roselle</a></li>
+      <li><b>TikTok:</b> <a href="#">@roselle</a></li>
+    </ul>
+  </td>
+</tr>
+</body>
+</html>
